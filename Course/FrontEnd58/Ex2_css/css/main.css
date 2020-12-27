@@ -1,0 +1,175 @@
+/* GLOBAL */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.clear{
+  clear: both;
+}
+
+/* HEADER */
+/* 
+    thẻ block : width = 100%
+    thẻ inline : width = nội dung
+*/
+.header ul {
+  padding: 10px 5px;
+  background-color: black;
+}
+
+.header ul li {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* margin : top right bottom left */
+  margin: 0px 5px 0px 5px;
+  /* margin : top-bottom right-left */
+  margin: 0px 5px;
+  display: inline;
+}
+
+.header ul li a {
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+}
+
+/* carousel */
+.carousel {
+  background-image: url(./../img/slider_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  background-position: center;
+}
+
+/* INTRO */
+.intro {
+  margin: 10px auto;
+}
+
+.intro-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: grey;
+  line-height: 30px;
+  letter-spacing: 2px;
+  text-indent: 40px;
+  text-align: justify;
+}
+
+.intro-text span {
+  color: red;
+}
+
+.intro-left,.intro-right {
+  float: left;
+  width: 50%;
+}
+
+.intro-product-item {
+  padding: 20px;
+}
+
+.intro-product-size1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.intro-product-size2 {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+.intro-product-item img {
+  width: 100%;
+  display: block;
+}
+
+/* PRODUCT */
+.product{
+  padding: 70px 0;
+}
+
+.product h2 {
+  text-align: center;
+}
+
+.product__item {
+  float: left;
+  width: 25%;
+  /* margin:0 20px ; */
+  padding:0 20px ;
+}
+
+.product__item img {
+  width: 100%;
+}
+
+.product__item button {
+  background-color: red;
+  color: white;
+  border: none;
+  text-align: center;
+  padding: 5px;
+}
+
+/* BANNER */
+.banner{
+  background-image: url(../img/nature.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+
+.banner__circle {
+  position: absolute;
+  /* top, right, bottom, left */
+  top:50px;
+  left: 250px;
+
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* rgba */
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  /* opacity: 0.5; */
+
+}
+
+/* SERVICE */
+.service {
+  width: 60%;
+  margin: 20px auto;
+}
+
+.service-item {
+  width: 33.3333%;
+  float: left;
+  text-align: center;
+}
+
+.service-item i{
+  font-size: 40px;
+  color: black;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.footer p{
+  margin: 10px;
+}
