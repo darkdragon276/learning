@@ -1,0 +1,98 @@
+/* GLOBAL */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.clear{
+  clear: both;
+}
+
+/* HEADER */
+/* 
+    thẻ block : width = 100%
+    thẻ inline : width = nội dung
+*/
+.header-logo {
+  float: left;
+}
+
+.header-title {
+  float: right;
+}
+
+/* TAB */
+.tab ul li{
+  display: inline;
+}
+
+/* CAROUSEL */
+.carousel img {
+  width: 100%;
+}
+
+/* INTRO */
+
+/* PRODUCT */
+.product-item {
+  float: left;
+  width: 25%;
+}
+
+/* EVENT */
+
+.event img {
+  visibility: hidden;
+}
+
+.event-big {
+  float: left;
+  width: 50%;
+  background-image: url(../img/tin_tuc_1.jpg);
+}
+
+.event-mini-items {
+  float: left;
+  width: 25%;
+}
+
+.event-big h1,.event-mini h3 {
+  color: white;
+  background-color: grey;
+}
+
+.event-mini-items:nth-child(1) {
+  background-image: url(../img/tin_tuc_2.jpg);
+}
+
+.event-mini-items:nth-child(2) {
+  background-image: url(../img/tin_tuc_3.jpg);
+}
+
+.event-mini-items:nth-child(3) {
+  background-image: url(../img/tin_tuc_4.jpg);
+}
+
+.event-mini-items:nth-child(4) {
+  background-image: url(../img/tin_tuc_5.jpg);
+}
+
+/* FOOTER */
+.footer-item {
+  background-image: url(../img/bg_banner.png);
+}
+
+.footer-background img{
+  visibility: hidden;
+  width: 100%;
+  height: 20px;
+}
+
+.footer-img {
+  float: left;
+}
+
+.footer-infor {
+  float: right;
+  width: 50%;
+}
