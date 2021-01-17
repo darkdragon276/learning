@@ -1,0 +1,212 @@
+/* GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    /* 1rem = 18px */
+    /* font-size: 18px; */
+    /* Nếu không khai báo, mặc định 1rem = 16px */
+}
+
+/* NAV BAR */
+
+.hs-navbar .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(25, 25, 25, 0.8)!important;
+}
+
+.hs-navbar .navbar-nav>li>a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0 1em;
+    background-color: rgba(12, 11, 11, 0);
+    border: none;
+    border-bottom: 2px solid #fff;
+}
+
+.hs-navbar h1 a.navbar-brand {
+    font-size: 56px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.hs-navbar h1 a.navbar-brand span {
+    color: #00cdce;
+}
+
+/* CAROUSEL */
+
+.hs-carousel .owl-item {
+    position: relative;
+}
+
+.hs-carousel .hs-carousel__img {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.hs-carousel .hs-carousel__info {
+    position: absolute;
+    top: 20vw;
+    left: 15vw;
+    width: 70%;
+    text-align: center;
+}
+
+.hs-carousel .owl-prev.customPrevBtn {
+    position: absolute;
+    top: 25vw;
+    left: 0;
+    background-color: transparent;
+    max-width: 15%;
+}
+
+.hs-carousel .owl-next.customNextBtn {
+    position: absolute;
+    top: 25vw;
+    right: 0;
+    background-color: transparent;
+    max-width: 15%;
+}
+
+.hs-carousel h4 {
+    font-size: 4.2vw;
+    font-weight: 900;
+    color: #FFF;
+    letter-spacing: 3px;
+    line-height: 1.1em;
+}
+
+.hs-carousel p {
+    font-size: 2vw;
+    font-weight: 400;
+    color: #d3d8d8;
+    letter-spacing: 1px;
+    line-height: 2em;
+}
+
+.owl-theme .owl-dots {
+    position: absolute;
+    bottom: 5vw;
+    width: 100%;
+    text-align: center;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background: black;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: white;
+    width: 12px;
+    height: 12px;
+    margin: 5px 10px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background-color: transparent;
+}
+
+/* ABOUT */
+
+.hs-about .hs-about__icon span {
+    font-size: 1.8em;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #7f7777;
+    border-radius: 50%;
+    padding: 20px 0px;
+    margin-bottom: 2vw;
+    color: black;
+    transition: all 0.5s;
+}
+
+.hs-about .hs-about__icon span:hover {
+    color: #fff;
+    background: #00cdce;
+}
+
+.hs-about h1 {
+    font-size: 3.5em;
+    margin-bottom: 0.8em;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.1;
+}
+
+.hs-about h3 {
+    color: #00cdce;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.8em;
+}
+
+.hs-about .row .col-12 p {
+    line-height: 2em;
+    font-size: 15px;
+    color: #7f7777;
+    margin-top: .8em;
+}
+
+/* STATS */
+
+.hs-stats {
+    background: #00cdce;
+    width: 100%;
+}
+
+.hs-stats h1 {
+    margin-bottom: 0.8em;
+    color: #000;
+    font-size: 4em;
+    font-weight: 500;
+}
+
+.hs-stats .counter {
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 44px;
+}
+
+.hs-stats h4 {
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-top: 5px;
+    color: #000;
+}
+
+.hs-stats .row {
+    margin: 0vw 10vw;
+}
+
+
+/* BACK TO TOP */
+
+.backToTop {
+    position: fixed;
+    bottom: 2vw;
+    right: 2vw;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
