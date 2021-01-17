@@ -11,6 +11,7 @@ html, body {
     /* 1rem = 18px */
     /* font-size: 18px; */
     /* Nếu không khai báo, mặc định 1rem = 16px */
+    scroll-behavior: smooth;
 }
 
 /* NAV BAR */
