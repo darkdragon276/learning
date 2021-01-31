@@ -572,6 +572,7 @@ footer .copyright a {
 .ms-carousel__content .buttons a {
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 
 .ms-carousel__content .buttons span::before {
@@ -585,11 +586,7 @@ footer .copyright a {
     transform: skewX(30deg);
     background: #ec7532;
     opacity: 0.5;
-    z-index: 0!important;
-}
-
-.ms-carousel__content .buttons span{
-    z-index: 1;
+    z-index: -1;
 }
 
 .ms-carousel__content a:hover span::before {
