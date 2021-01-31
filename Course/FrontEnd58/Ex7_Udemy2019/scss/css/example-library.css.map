@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../vendors/example-library.scss"
+    ],
+    "names": [],
+    "file": "example-library.css"
+}

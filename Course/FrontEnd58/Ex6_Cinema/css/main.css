@@ -1,0 +1,220 @@
+/* GLOBAL */
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+
+#msNavbar .navbar-nav {
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+#msNavbar .nav-item::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    display: block;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    box-shadow: 0 0 20px 0 #fbbd61;
+}
+
+#msNavbar .nav-item:hover:after {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+#msNavbar .nav-item.active::after {
+    width: 100%;
+}
+
+#msNavbar ul li a {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0 1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.ms-header__phone a {
+    text-decoration: none;
+    color: white;
+    border-right: 1px dotted white;
+}
+
+.ms-header__phone {
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding-top: 2rem;
+}
+
+header nav .row img {
+    width: 100%;
+    max-width: 300px;
+}
+
+header nav .row {
+    width: 100%;
+}
+
+@media screen and (min-width:1023.98px) {
+    header nav .row {
+        width: auto;
+    }
+}
+
+/* NEW-IN */
+
+.ms-new-in h2 {
+    font-size: 18px;
+    margin-bottom: 40px;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    color: #ec7532;
+    line-height: 1.4em;
+    margin: 0 0 40px;
+    padding: 0 0 20px;
+    border-bottom: 1px solid #d8d8d8;
+    position: relative;
+}
+
+.ms-new-in h2::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 125px;
+    height: 4px;
+    content: '';
+    background-image: linear-gradient(to right, #fbbd61, #ec7532);
+}
+
+.ms-new-in__img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.ms-new-in__img img {
+    width: 100%;
+}
+
+.ms-new-in__overlay {
+    width: 230%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #fbbd61, #ec7532);
+    /* transform: skewX(45deg) translateX(-30%); */
+    transform: skewX(45deg) translateX(-130%);
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+
+.ms-new-in__img:hover .ms-new-in__overlay {
+    transform: skewX(45deg) translateX(-28%);
+}
+
+.ms-new-in__readmore {
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: white;
+}
+
+.ms-new-in__readmore h4 {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.ms-new-in__readmore p {
+    font-size: 16px;
+}
+
+.ms-new-in__icon {
+    width: 70px;
+    height: 70px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 23px;
+    margin: auto;
+    margin-top: 25%;
+    margin-bottom: 15%;
+}
+
+.ms-new-in__img:hover .ms-new-in__readmore {
+    opacity: 1;
+}
+
+.ms-new-in__star .fas.fa-star {
+    color: #fbbd61;
+}
+
+.ms-new-in__star .far.fa-star {
+    color: #d8d8d8;
+}
+
+/* SHOW TIME */
+
+.ms-show-time .tab-content .time.past {
+    opacity: 0.5;
+}
+
+.ms-show-time .tab-content .time {
+    font-size: 14px;
+    margin-left: 5px;
+    padding: 7px 10px;
+    letter-spacing: 2px;
+    color: #717171;
+    border-radius: 5px;
+    background-color: #d8d8d8;
+}
+.ms-show-time .nav-item a {
+    font-size: 18px;
+    position: relative;
+    display: block;
+    padding: 10px 30px 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #4a4a4a;
+}
+
+.ms-show-time .nav-item a.active {
+    color: #ec7532;
+    border-color: #fff #fff #fff #fff;
+}
+
+.ms-show-time .nav-item:after {
+    content: '';
+    height: 4px;
+    width: 0%;
+    display: block;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    box-shadow: 0 0 20px 0 #fbbd61;
+}
+
+.ms-show-time .nav-item:hover:after {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.tab-pane p:first-child{
+    color: #ec7532;
+    font-size: .7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:575.98px) {
+    .ms-show-time img {
+        width: 100%;
+    }
+}
