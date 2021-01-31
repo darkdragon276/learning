@@ -6,6 +6,11 @@ html, body {
 
 /* HEADER */
 
+header .ms-header__phone, header .navbar {
+    padding-left: 20vw!important;
+    padding-right: 20vw!important;
+}
+
 #msNavbar .navbar-nav {
     border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
@@ -211,10 +216,395 @@ header nav .row {
     font-size: .7rem;
     letter-spacing: 2px;
     text-transform: uppercase;
+    margin-bottom: 0px;
 }
+
+.ms-show-time h3 {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #101010;
+    margin-bottom: 10px;
+}
+
+.ms-show-time p {
+    color: #717171;
+    margin-bottom: 20px;
+}
+
+.ms-show-time a {
+    font-size: 12px;
+    position: relative;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #ec7532;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.ms-show-time a:hover {
+    color: black;
+}
+
+.ms-show-time__time .text-left span:first-child {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #4a4a4a;
+}
+
+.ms-show-time__time .text-right span:last-child {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 33px;
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    margin-left: 5px;
+    text-align: center;
+    letter-spacing: 0;
+    color: #fff;
+    border-radius: 50%;
+    background: #4a4a4a;
+}
+
+/* COMMING SOON */
+
+.ms-comming-soon {
+    background-color: black;
+    padding: 0 10vw;
+}
+
+.ms-comming-soon__head h1{
+    line-height: 1.4em;
+    position: relative;
+    margin: 0 0 10px;
+    padding: 0 0 20px;
+    border-bottom: 1px solid #d8d8d8;
+    font-size: 18px;
+    margin-bottom: 40px;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom-color: #333;
+    width: 100%;
+}
+
+.ms-comming-soon__head h1::after {
+    position: absolute;
+    right: auto;
+    bottom: -1px;
+    display: block;
+    width: 125px;
+    height: 4px;
+    content: '';
+    background-image: linear-gradient(to right,#fbbd61,#ec7532);
+}
+
+.ms-comming-soon h3 {
+    font-size: 34px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.ms-comming-soon p {
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.ms-comming-soon p:first-child {
+    color: #ec7532;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.ms-comming-soon a {
+    font-size: 12px;
+    position: relative;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #ec7532;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.ms-comming-soon a:hover {
+    color: white;
+}
+
+.ms-comming-soon__video div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.ms-comming-soon__video img {
+    width: 100%;
+    height: 100%;
+}
+
+.ms-comming-soon__video a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    font-size: 30px;
+    transition: all 300ms;
+}
+
+.btn-danger {
+    width: 80px;
+    height: 80px;
+    line-height: 75px;
+    background-color: transparent;
+    border-color: #ec7532;
+    border-radius: 50%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ms-comming-soon__video:hover .btn-danger {
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+}
+
+.btn-danger:hover {
+    color: transparent;
+    background-color: transparent;
+}
+
+.ms-comming-soon__video i{
+    color: white;
+}
+
+/* MOVIE LIST */
+.ms-movie-list {
+    padding: 0px 10vw;
+    background-color: #101010;
+}
+
+.ms-movie-list__items img {
+    width: 100%;
+    opacity: 0.5;
+    border-radius: 5%;
+    transition: all 0.5s;
+}
+
+.ms-movie-list__items:hover >* {
+    opacity: 1;
+}
+
+.ms-movie-list__items h4 {
+    font-size: 16px;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    opacity: 0.5;
+}
+
+.ms-movie-list__items p {
+    font-size: 14px;
+    opacity: .5;
+    color: #fff;
+    opacity: 0.5;
+}
+
+/* CONTACT */
+.ms-contact h2 {
+    font-size: 23px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #4a4a4a;
+}
+
+.ms-contact h1 {
+    font-size: 46px;
+    font-weight: 400;
+    background: linear-gradient(330deg,#fbbd61 0%,#ec7532 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    letter-spacing: 1px;
+    
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    padding-top: 5rem;
+}
+
+.footer__items h6 {
+    font-size: 16px;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ec7532;
+    border: none;
+    padding-bottom: 20px;
+}
+
+.footer__items ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.footer__items ul li a{
+    font-size: 13px;
+    display: inline-block;
+    padding: 3px 0;
+    letter-spacing: 1.5px;
+    color: #fff;
+    transition: all 300ms ease-in-out;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+
+footer .copyright {
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255,255,255,.1);
+    color: white;
+}
+
+footer .copyright a {
+    color: white;
+}
+
+/* CAROUSEL */
+
+.ms-carousel .owl-item {
+    position: relative;
+}
+
+.ms-carousel img {
+    width: 100%;
+    height: 900px;
+    opacity: 0.8;
+}
+
+.ms-carousel__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.ms-carousel__content .title {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fbbd61;
+}
+
+.ms-carousel__content h1 {
+    font-size: 52px;
+    font-weight: 300;
+    padding: 0;
+    letter-spacing: 3px;
+    color: #fff;
+    border: none;
+}
+
+.ms-carousel__content p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.ms-carousel__content .certificate {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 48px;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+    /* transform: translateY(2px); */
+    text-align: center;
+    color: #fff;
+    border: solid 2px #fff;
+    border-radius: 50%;
+}
+
+.ms-carousel__content .btn-default {
+    font-size: 13px;
+    font-weight: 400;
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    padding: 12px 24px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #fff;
+    border-width: 2px;
+    border-radius: 30px;
+    border: none;
+    background-image: linear-gradient(to right,#fbbd61,#ec7532);
+}
+
+.ms-carousel__content {
+    padding-left: 20vw;
+    padding-top: 10vw;
+}
+
+.owl-dots {
+    position: absolute;
+    left: 20vw;
+    bottom: 5vw;
+}
+
+.ms-carousel__content .buttons a {
+    position: relative;
+    overflow: hidden;
+}
+
+.ms-carousel__content .buttons span::before {
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+    width: 0;
+    height: 100%;
+    content: '';
+    transition: all .4s;
+    transform: skewX(30deg);
+    background: #ec7532;
+    opacity: 0.5;
+    z-index: 0!important;
+}
+
+.ms-carousel__content .buttons span{
+    z-index: 1;
+}
+
+.ms-carousel__content a:hover span::before {
+    width: 100%;
+    transition: all 0.5s;
+}
+
 
 @media screen and (max-width:575.98px) {
     .ms-show-time img {
         width: 100%;
+    }
+
+    .ms-carousel__content h1 {
+        font-size: 40px;
+        line-height: 1.2em;
     }
 }
