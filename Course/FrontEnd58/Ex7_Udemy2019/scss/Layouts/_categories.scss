@@ -1,0 +1,31 @@
+.ud-categories {
+    margin: $mg-2 auto;
+    padding-top: $pd-2;
+    h1 {
+        @include d-text($fs-3, $fw-bold, $color-black-0);
+        margin-left: - $mg-1;
+    }
+    &__content {
+        &-item {
+            max-width: 30%;
+            border: 1px solid $color-gray-1;
+            margin-right: $mg-2;
+            margin-top: $mg-2;
+            box-shadow: 0px 2px 3px 0px rgba(20, 23, 28, 0.1);
+            padding: $pd-0 $pd-2;
+            a {
+                display: flex;
+                text-decoration: none;
+                text-align: center;
+                i {
+                    @include d-text($fs-4, $fw-normal, $color-black-0, null, $line-height-0);
+                    margin-right: $mg-2
+                }
+                p {
+                    @include d-text($fs-0, $fw-normal, $color-black-0);
+                    margin: auto $mg-0;
+                }
+            }
+        }
+    }
+}

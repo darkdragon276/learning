@@ -1,0 +1,29 @@
+.ud-services {
+    background-color: $color-white-cream;
+    padding: $pd-2 9%;
+    &__content {
+        width: 100%;
+        &-item {
+            max-width: 30%;
+            margin: auto;
+            display: flex;
+            background-color: $color-white-0;
+            border: 1px solid $color-gray-1;
+            .icon {
+                @include d-text($fs-4 + 10, $fw-bold, $color-blue);
+                margin-right: $mg-2;
+            }
+            .content {
+                p {
+                    @include d-limit-text-line(2);
+                }
+                p:first-child {
+                    @include d-text($fs-0 + 2, $fw-bold, $color-black-0);
+                }
+                p:last-child {
+                    @include d-text($fs-0, $fw-normal, $color-black-0);
+                }
+            }
+        }
+    }
+}

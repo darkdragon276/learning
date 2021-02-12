@@ -1,0 +1,62 @@
+.ud-carousel {
+    background-image: url(../img/cover.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    &__content {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        width: 40%;
+    }
+    h1 {
+        @include d-text($fs-4, $fw-bold, $color-white-0);
+        @include d-limit-text-line(2);
+    }
+    p {
+        @include d-text($fs-2 - 2, $fw-normal, $color-white-0);
+        @include d-limit-text-line(2);
+    }
+    .input {
+        .form-control {
+            padding: $pd-2;
+            border-radius: 0px;
+            border: none;
+            height: 100%;
+            &::placeholder {
+                @include d-text($fs-2, $fw-normal, $color-gray-2);
+            }
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        .input-group {
+            .input-group-text {
+                background-color: $color-white-0;
+                color: $color-red-0;
+                border: none;
+                padding: $pd-2;
+            }
+            &:hover {
+                .input-group-text {
+                    background-color: $color-red-0;
+                    color: $color-white-0;
+                }
+            }
+        }
+    }
+
+    @include respond-to("medium") {
+        &__content {
+            width: 70%;
+        }
+    }
+
+    @include respond-to("large") {
+        &__content {
+            width: 50%;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+@function d-compile($text1, $text2) {
+    @return $text1 + "-" + $text2;
+}
+
+@mixin d-text($font-size, $font-weight, $color, $bg-color: null, $line-height: null) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+    background-color: $bg-color;
+    line-height: $line-height;
+}
+
+@mixin d-border($boder-width, $boder-type, $boder-color, $null-sides...) {
+    border: $boder-width $boder-type $boder-color;
+    @each $side in $null-sides {
+        #{d-compile('border', $side)}: none;
+    }
+}
+
+@mixin d-button($color, $bg-color, $border, $padding: null, $hover-bg: null) {
+    color: $color;
+    background-color: $bg-color;
+    padding: $padding !important;
+    border: $border;
+    &:hover {
+        color: $color;
+        background-color: $hover-bg;
+    }
+}
+
+@mixin d-limit-text-line($num-line) {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: $num-line; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+@mixin d-cicle($diameter, $bg-color, $box-shadow:null, $z-index: null) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $diameter;
+    height: $diameter;
+    border-radius: 50%!important;
+    background-color: $color-white-0!important;
+    box-shadow: $box-shadow;
+    z-index: $z-index;
+}
+
+@mixin respond-to($breakpoint) {
+    @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+        $value: map-get(
+            $map: $breakpoints,
+            $key: $breakpoint,
+        );
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    } @else {
+        @warn "screen not exist";
+    }
+}
+

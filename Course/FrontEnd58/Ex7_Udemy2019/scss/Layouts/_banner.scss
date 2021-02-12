@@ -1,0 +1,24 @@
+.ud-banner {
+    height: 400px;
+    &__top-overlay {
+        height: 10px;
+        background: linear-gradient(to right, $color-red-1, $color-red-0 );
+    }
+    &__content {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: $color-black-0;
+        color: $color-gray-5;
+        &-info {
+            h2 {
+                @include d-text($fs-3, $fw-bold-1, inherit);
+            }
+            p {
+                @include d-text($fs-0, $fw-normal, inherit);
+            }
+        }
+    }
+}

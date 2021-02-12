@@ -1,0 +1,19 @@
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 30%;
+    left: -$pd-2;
+    @include d-cicle(45px, $color-white-0, 0 2px 8px 2px rgba(20, 23, 28, 0.1), 3);
+    span {
+        @include d-text($fs-4, $fw-normal, $color-blue);
+        line-height: 0.6;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.owl-next {
+    left: unset;
+    right: -$pd-2;
+}

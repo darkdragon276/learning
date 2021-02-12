@@ -1,0 +1,47 @@
+.ud-students {
+    margin: $mg-2 auto;
+    &__content {
+        h2 {
+            @include d-text($fs-2, $fw-normal, $color-black-light);
+            padding-left: $pd-1;
+        }
+    }
+    &__course {
+        .card {
+            margin: $mg-0 $mg-1;
+            img {
+                width: 100%;
+            }
+            .card-title {
+                @include d-text($fs-0, $fw-bold, $color-black-0);
+            }
+            .card-text {
+                @include d-text($fs-1, $fw-normal, $color-gray-4);
+            }
+            .rating {
+                display: flex;
+                .rating-star {
+                    @include d-text($fs-1, $fw-normal, $color-yellow);
+                    margin-right: $mg-0;
+                }
+                span:nth-child(2) {
+                    @include d-text($fs-1, $fw-bold, $color-gray-4);
+                    margin-right: $mg-0;
+                }
+                span:last-child {
+                    @include d-text($fs-1, $fw-normal, $color-gray-4);
+                }
+            }
+            .price {
+                text-align: right;
+                .old-price {
+                    @include d-text($fs-1, $fw-normal, $color-gray-4);
+                    text-decoration: line-through;
+                }
+                .new-price {
+                    @include d-text($fs-0, $fw-bold, $color-black-0);
+                }
+            }
+        }
+    }
+}

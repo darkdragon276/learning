@@ -1,44 +1,32 @@
-// Style Guide: https://github.com/georgeroubie/CSS-Style-Guide/blob/master/README.md
-// Style Lint: https://github.com/georgeroubie/CSS-Style-Guide/blob/master/.stylelintrc
+// Chứa đường dẫn tới các files con
+//Không chứa code style css
 
-// Abstracts
-@import './abstracts/variables';
-@import './abstracts/mixins';
-@import './abstracts/classes';
-@import './abstracts/colors';
-@import './abstracts/placeholders';
-@import './abstracts/animations';
+// Helper
+@import './Helper/variables';
+@import './Helper/mixin';
 
-// Vendors
-@import './vendors/example-library';
+//Vendor
 
-// Base
-@import './base/base';
-@import './base/reset';
-@import './base/typography';
+//Base
+@import './Base/reset';
+@import './Base/customize';
 
-// Layout (alphabetical order)
-@import './layout/footer';
-@import './layout/forms';
-@import './layout/grid';
-@import './layout/header';
-@import './layout/menu';
-@import './layout/tables';
+//Components
+@import './Components/button';
 
-// Components (alphabetical order)
-@import './components/buttons';
-@import './components/dropdown';
-@import './components/loaders';
-@import './components/modals';
+//Layouts
+@import './Layouts/header';
+@import './Layouts/carousel';
+@import './Layouts/intro';
+@import './Layouts/course';
+@import './Layouts/services';
+@import './Layouts/student';
+@import './Layouts/banner';
+@import './Layouts/categories';
+@import './Layouts/feedback';
+@import './Layouts/footer';
 
-// Vendors Extensions (alphabetical order)
-@import './vendors-extensions/example-library';
+//Pages
 
-// Pages (alphabetical order)
-@import './pages/contact';
-@import './pages/home';
-@import './pages/user-profile';
+//Theme
 
-// Themes (alphabetical order)
-@import './themes/admin';
-@import './themes/authenticated';

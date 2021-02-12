@@ -1,0 +1,21 @@
+.btn--white {
+    @include d-text(null, $fw-bold-0, null);
+    @include d-button(
+        $color-gray-4,
+        $color-white-0,
+        1px solid $color-black-light,
+        ($pd-1 + 1) ($pd-1 + 2),
+        $color-gray-1
+    );
+}
+
+.btn--red {
+    @include d-text(null, $fw-bold-0, null);
+    @include d-button(
+        $color-white-0,
+        $color-red-0,
+        1px solid $color-red-0,
+        ($pd-1 + 1) ($pd-1 + 2),
+        $color-red-1
+    );
+}
