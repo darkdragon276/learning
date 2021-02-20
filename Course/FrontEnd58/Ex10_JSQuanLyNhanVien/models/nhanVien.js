@@ -3,14 +3,14 @@ var NhanVien = function () {
     this.tenNhanVien = '';
     this.tenChucVu = '';
     this.heSoChucVu = 0;
+    
     this.luongCoBan = 0;
-    this.soGioLam = 0;
-
     this.tinhLuong = function () {
         var tongLuong = this.luongCoBan * this.heSoChucVu;
         return tongLuong;
     }
-
+    
+    this.soGioLam = 0;
     this.xepLoai = function () {
         var soGioLam = this.soGioLam;
         const factor = 10;
@@ -24,8 +24,9 @@ var NhanVien = function () {
             soGioLam = min;
             return "khong xep loai";
         }
-
+        
         var index = Math.round(((soGioLam - obset) / factor) - 0.5);
         return type[index];
     }
+    
 }
