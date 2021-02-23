@@ -1,0 +1,30 @@
+// Chứa đường dẫn tới các files con
+//Không chứa code style css
+
+// Helper
+@import './Utils/variables';
+@import './Utils/mixin';
+
+//Vendor
+
+//Base
+@import './Base/reset';
+@import './Base/customize';
+
+//Components
+// @import './Components/button';
+
+//Layouts
+@import './Layouts/header';
+@import './Layouts/navbar';
+@import './Layouts/carousel';
+@import './Layouts/intro';
+@import './Layouts/product';
+@import './Layouts/event';
+@import './Layouts/trend';
+@import './Layouts/info';
+@import './Layouts/footer';
+
+//Pages
+
+//Theme

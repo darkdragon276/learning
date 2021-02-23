@@ -1,0 +1,24 @@
+// Chứa đường dẫn tới các files con
+//Không chứa code style css
+
+// Helper
+@import './Utils/variables';
+@import './Utils/mixin';
+
+//Vendor
+@import './Vendors/floating-totop-button';
+
+//Base
+@import './Base/reset';
+@import './Base/customize';
+
+//Components
+// @import './Components/button';
+
+//Layouts
+@import './Layouts/header';
+@import './Layouts/footer';
+
+//Pages
+
+//Theme

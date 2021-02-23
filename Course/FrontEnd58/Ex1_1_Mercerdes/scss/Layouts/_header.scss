@@ -1,0 +1,95 @@
+.ud-navbar {
+    background-color: $color-white-0;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    transition: all 0.5s 0s;
+    &.ud-fixed {
+        border-bottom: 3px solid $color-blue;
+    }
+    border-bottom: 1px solid $color-gray-3;
+    .navbar-brand {
+        flex-grow: 1;
+        img {
+            width: 110px;
+        }
+    }
+
+    .category {
+        flex-grow: 1;
+        @include d-text($fs-1, $fw-normal, $color-black-light);
+        align-self: center;
+    }
+    .input-search {
+        flex-grow: 5;
+        .form-control {
+            background-color: $color-gray-1;
+            border: none;
+            transition: none;
+            &:focus {
+                box-shadow: none;
+                background-color: $color-white-0;
+                @include d-border(1px, solid, $color-gray-1, right);
+            }
+            &:focus + .input-group-append {
+                color: $color-red-0;
+                background-color: $color-white-0;
+                @include d-border(1px, solid, $color-gray-1, left);
+                &:hover .input-group-text {
+                    background-color: $color-red-0;
+                    color: $color-white-0;
+                }
+            }
+        }
+        .input-group {
+            .input-group-text {
+                background-color: $color-gray-1;
+                color: $color-red-0;
+                border: none;
+            }
+            &:hover {
+                .input-group-text {
+                    background-color: $color-red-0;
+                    color: $color-white-0;
+                }
+            }
+        }
+    }
+
+    .navbar-nav {
+        justify-content: space-between;
+        width: 100%;
+        .nav-item {
+            .nav-link {
+                @include d-text($fs-1, $fw-normal, $color-black-light);
+                padding: $pd-1 $pd-2;
+            }
+            &:hover {
+                background-color: $color-gray-1;
+            }
+            .button {
+                flex: wrap;
+            }
+            margin-left: auto;
+        }
+        .nav-item.icon {
+            border-radius: 50%;
+        }
+    }
+    @include respond-to("extra-large") {
+        .navbar-nav {
+            @for $i from 1 through 2 {
+                .nav-item:nth-child(#{$i}) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @include respond-to("medium") {
+        .category,
+        .input-search {
+            display: none;
+        }
+    }
+}

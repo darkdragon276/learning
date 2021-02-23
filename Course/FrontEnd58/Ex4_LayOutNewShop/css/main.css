@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  font-family: 'Roboto', sans-serif;
+  /* default 1rem 16px, font-size: 16px */
+}
+
 /* SPECIAL */
 h1.special {
   color: #0069bc;
@@ -184,6 +189,7 @@ header {
   background-color: inherit;
   border-radius: 2px;
   outline: none;
+  transition: color;
 }
 
 .product.background1 button{
@@ -195,7 +201,7 @@ header {
 }
 
 .product-item:hover button {
-  transition: color;
+  
   border-color: #f99e3a;
 }
 

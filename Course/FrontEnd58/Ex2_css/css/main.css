@@ -16,6 +16,8 @@
 .header ul {
   padding: 10px 5px;
   background-color: black;
+  border: 10px solid white;
+  background-color: ;
 }
 
 .header ul li {

@@ -1,0 +1,13 @@
+.intro {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px 20vw;
+    &-content:first-child {
+        grid-area: 1 / 1 / span 2 / span 2;
+    }
+
+    &-content:nth-child(2) {
+        grid-area: 1 / 3 / span 1/ span 2;
+    }
+}

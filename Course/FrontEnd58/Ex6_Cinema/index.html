@@ -33,7 +33,9 @@
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
 
     <!-- main css -->
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'> -->
+    <link rel='stylesheet' type='text/css' media='screen'
+        href='./css/main.min.css'>
 </head>
 
 <body>
@@ -603,6 +605,9 @@
         </div>
     </footer>
 
+    <div class="toTopButton">
+
+    </div>
 
     <!-- bs4.5 bundle js + support jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -620,7 +625,6 @@
             $(".venobox").venobox();
         });
     </script>
-
     <!-- OWL JS -->
     <script src="./js/owl.carousel.min.js"></script>
     <script>
@@ -645,6 +649,24 @@
         //     // Parameters has to be in square bracket '[]'
         //     owl.trigger('prev.owl.carousel', [300]);
         // })
+    </script>
+
+    <script src="./js/floating-totop-button.min.js"></script>
+    <script>
+        $("body").toTopButton({
+            // path to icons
+            imagePath: './img/icons',
+            // arrow, arrow-circle, caret, caret-circle, circle, circle-o, arrow-l, drop, rise, top
+            // or your own SVG icon
+            arrowType: 'arrow',
+
+            // 'w' = white
+            // 'b' = black
+            iconColor: 'w',
+            // icon shadow
+            // from 1 to 16
+            iconShadow: 4,
+        });
     </script>
 </body>
 

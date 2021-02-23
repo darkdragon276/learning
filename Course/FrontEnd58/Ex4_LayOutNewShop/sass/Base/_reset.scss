@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+    @include text($fs-0, $fw-normal, $color-black-0, $color-white-0, $line-height-0);
+}

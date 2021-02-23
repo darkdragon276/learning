@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    padding: 20px 10vw;
+    @include text(20px, normal, white, #0069bc, 16px);
+    .header-left,
+    .header-right {
+        flex: 50%;
+    }
+
+    .header-right {
+        @include listFormat(right, 1rem);
+    }
+}
