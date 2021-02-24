@@ -35,18 +35,31 @@
 <body>
 	<header>
 	</header>
-	<section class="mec-carousel ">
-        <div class="owl-carousel owl-theme">
-			<div class="item"><img src="./img/01-carousel.jpeg"  alt=""></div>
-			<div class="item"><img src="./img/02-carousel.jpeg"  alt=""></div>
-			<div class="item"><img src="./img/03-carousel.jpeg"  alt=""></div>
-			<div class="item"><img src="./img/04-carousel.jpeg"  alt=""></div>
-			<div class="item"><img src="./img/05-carousel.jpeg"  alt=""></div>
-			<div class="item"><img src="./img/06-carousel.jpeg"  alt=""></div>
+	<section class="mec-carousel">
+        <div class="mec-carousel__img owl-carousel owl-theme">
+			<div class="item">	
+				<div class="img_relative"><img src="./img/01-carousel.jpeg"  alt=""></div>			
+				<div class="img_abs"><p>Something1</p></div>
+			</div>
+			<div class="item">
+				<div class="img_relative"><img src="./img/02-carousel.jpeg"  alt=""></div>			
+				<div class="img_abs"><p>Something1</p></div>			</div>
+			<div class="item">
+				<div class="img_relative"><img src="./img/03-carousel.jpeg"  alt=""></div>			
+				<div class="img_abs"><p>Something1</p></div>			</div>
+			<div class="item">
+				<div class="img_relative"><img src="./img/04-carousel.jpeg"  alt=""></div>			
+				<div class="img_abs"><p>Something1</p></div>			</div>
+			<div class="item">
+				<div class="img_relative"><img src="./img/05-carousel.jpeg"  alt=""></div>			
+				<div class="img_abs"><p>Something1</p></div>			</div>
+			<div class="item">
+				<div class="img_relative"><img src="./img/06-carousel.jpeg"  alt=""></div>			
+				<div class="img_abs"><p>Something1</p></div>			</div>
 
 		</div>
     </section>
-
+	<!-- owl-carousel owl-theme  -->
 	<footer>
 	</footer>
 
@@ -69,25 +82,6 @@
 	</script>
 
 	<script src="./js/owl.carousel.min.js"></script>
-	<script>
-		$('.ud-students__course').owlCarousel({
-			loop: true,
-			autoplay: false,
-			nav: true,
-			dots: false,
-			responsive: {
-				0: {
-					items: 1
-				},
-				480: {
-					items: 1
-				},
-				768: {
-					items: 1
-				},
-			}
-		})
-	</script>
 	<script>
 		$('.owl-carousel').owlCarousel({
 			loop: true,
