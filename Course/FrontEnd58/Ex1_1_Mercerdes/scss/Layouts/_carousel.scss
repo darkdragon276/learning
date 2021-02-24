@@ -1,4 +1,11 @@
-.carousel{
+.mec-carousel {
+    #owl-container {
 
-
+      }
+    
+      #owl-carousel .item img {
+        display:block;
+        width:100%;
+        margin:0
+      }
 }
