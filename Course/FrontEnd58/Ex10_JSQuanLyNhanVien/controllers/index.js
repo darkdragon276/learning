@@ -1,11 +1,12 @@
 let nhanViens = new Array(10);
+let validate = new Validate;
 
 document.querySelector("#btnXacNhan").onclick = function (event) {
     let nhanVien1 = new NhanVien;
-    nhanVien1.maNhanVien = document.getElementById("maNhanVien").value;
-    nhanVien1.tenNhanVien = document.getElementById("tenNhanVien").value;
-    nhanVien1.soGioLam = parseFloat(document.getElementById("soGioLam").value);
-    nhanVien1.luongCoBan = parseFloat(document.getElementById("luongCoBan").value);
+    nhanVien1.maNhanVien = validate.isEmpty("#maNhanVien", "ma nhan vien");
+    nhanVien1.tenNhanVien = validate.isEmail("#tenNhanVien", "ten nhan vien");
+    nhanVien1.soGioLam = parseFloat(validate.isEmpty("#soGioLam", "so gio lam"));
+    nhanVien1.luongCoBan = parseFloat(validate.isEmpty("#luongCoBan", "luong co ban"));
     let ChucVu = document.getElementById("chucVu");
     nhanVien1.tenChucVu = ChucVu.options[ChucVu.selectedIndex].innerHTML;
     nhanVien1.heSoChucVu = parseFloat(ChucVu.value);
@@ -16,8 +17,15 @@ document.querySelector("#btnXacNhan").onclick = function (event) {
     document.getElementById("txtTongLuong").innerHTML = nhanVien1.tinhLuong();
     document.getElementById("txtXepLoai").innerHTML = nhanVien1.xepLoai();
 
-    nhanViens.push(nhanVien1);
-    show("tblNhanVien", nhanViens);
+    if(checked(nhanVien1)) {
+        nhanViens.push(nhanVien1);
+        show("tblNhanVien", nhanViens);
+    }
+}
+
+let checked = function(NhanVien) {
+    // validate.isEmpty()
+    return true
 }
 
 let show = function (id, array) {
@@ -40,7 +48,7 @@ let deleteRow = function (maNhanVien) {
         if (maNhanVien === element.maNhanVien) {
             delete nhanViens[index];
             show("tblNhanVien", nhanViens);
-            return;
+            // return;
         }
     }
 }
