@@ -50,4 +50,3 @@ document.querySelector("#btnTinhTien").onclick = function (event) {
 }
 
 
-
