@@ -23,10 +23,12 @@
                 <div class="form-group">
                     <p>Ma nhan vien</p>
                     <input type="text" class="form-control" id="maNhanVien">
+                    <p class="text-danger check"></p>
                 </div>
                 <div class="form-group">
                     <p>Ten nhan vien</p>
                     <input type="text" class="form-control" id="tenNhanVien">
+                    <p class="text-danger check"></p>
                 </div>
                 <div class="form-group">
                     <p>Chuc Vu</p>
@@ -39,10 +41,12 @@
                 <div class="form-group">
                     <p>Luong co ban</p>
                     <input type="text" class="form-control" id="luongCoBan">
+                    <p class="text-danger check"></p>
                 </div>
                 <div class="form-group">
                     <p>So gio lam</p>
                     <input type="text" class="form-control" id="soGioLam">
+                    <p class="text-danger check"></p>
                 </div>
                 <div class="form-group">
                     <button class="btn btn-success" id="btnXacNhan">Xac
@@ -78,6 +82,7 @@
                 </tr>
             </thead>
             <tbody id="tblNhanVien">
+                <!-- <button class="btn btn-danger btn-xoa">Xoa</button> -->
             </tbody>
         </table>
     </div>
@@ -97,6 +102,7 @@
         crossorigin="anonymous"></script>
 
     <!-- models -->
+    <script src="./models/validation.js"></script>
     <script src="./models/nhanVien.js"></script>
 
     <!-- services -->
