@@ -30,6 +30,126 @@
 <body>
 	<header>
 	</header>
+	<section class="mec-carousel">
+		<!-- Boostrap Slider -->
+		<div id="carousel__mec" class="carousel slide mec-carousel__slider" data-ride="carousel">
+			<!-- <ol class="carousel-indicators">
+				<li data-target="#carousel__mec" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel__mec" data-slide-to="1"></li>
+				<li data-target="#carousel__mec" data-slide-to="2"></li>
+				<li data-target="#carousel__mec" data-slide-to="3"></li>
+				<li data-target="#carousel__mec" data-slide-to="4"></li>
+				<li data-target="#carousel__mec" data-slide-to="5"></li>
+			</ol> -->
+			<div class="carousel-inner mec-carousel__img">
+				<div class="carousel-item active mec-item">
+					<img class="d-block w-100" src="./img/01-carousel.jpeg" alt="First slide">
+					<div class="carousel-caption .d-md-block Caption_show">
+						<dl>
+							<dt>
+								<h3>The new C-Class by</h3>
+							</dt>
+							<dt>
+								<h4>Mercedes-Bendz.</h4>
+							</dt>
+							<dt><button class="btn btn-primary">Learn
+									more</button></dt>
+						</dl>
+					</div>
+				</div>
+				<div class="carousel-item  mec-item">
+					<img class="d-block w-100" src="./img/02-carousel.jpeg" alt="Second slide">
+					<div class="carousel-caption .d-none Caption_show">
+						<dl>
+							<dt>
+								<h3>The new C-Class by</h3>
+							</dt>
+							<dt>
+								<h4>Mercedes-Bendz.</h4>
+							</dt>
+							<dt><button class="btn btn-primary">Learn
+									more</button></dt>
+						</dl>
+					</div>
+				</div>
+				<div class="carousel-item  mec-item">
+					<img class="d-block w-100" src="./img/03-carousel.jpeg" alt="Third slide">
+					<div class="carousel-caption .d-none Caption_show">
+						<dl>
+							<dt>
+								<h3>The new C-Class by</h3>
+							</dt>
+							<dt>
+								<h4>Mercedes-Bendz.</h4>
+							</dt>
+							<dt><button class="btn btn-primary">Learn
+									more</button></dt>
+						</dl>
+					</div>
+				</div>
+				<div class="carousel-item  mec-item">
+					<img class="d-block w-100" src="./img/04-carousel.jpeg" alt="Four slide">
+					<div class="carousel-caption .d-none Caption_show">
+						<dl>
+							<dt>
+								<h3>The new C-Class by</h3>
+							</dt>
+							<dt>
+								<h4>Mercedes-Bendz.</h4>
+							</dt>
+							<dt><button class="btn btn-primary">Learn
+									more</button></dt>
+						</dl>
+					</div>
+				</div>
+				<div class="carousel-item  mec-item">
+					<img class="d-block w-100" src="./img/05-carousel.jpeg" alt="Five slide">
+					<div class="carousel-caption .d-none Caption_show">
+						<dl>
+							<dt>
+								<h3>The new C-Class by</h3>
+							</dt>
+							<dt>
+								<h4>Mercedes-Bendz.</h4>
+							</dt>
+							<dt><button class="btn btn-primary">Learn
+									more</button></dt>
+						</dl>
+					</div>
+				</div>
+				<div class="carousel-item  mec-item">
+					<img class="d-block w-100" src="./img/06-carousel.jpeg" alt="Six slide">
+					<div class="carousel-caption .d-none Caption_show">
+						<dl>
+							<dt>
+								<h3 style="color: black;">The new C-Class by
+								</h3>
+							</dt>
+							<dt>
+								<h4 style="color: black;">Mercedes-Bendz.</h4>
+							</dt>
+							<dt><button class="btn btn-primary">Learn
+									more</button></dt>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carousel__mec" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carousel__mec" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		<!-- Searching bar of Origin -->
+		<div class="input-group input_bar input-group-lg">
+			<input style="height:2.5vw" type="text" class="form-control" placeholder="I am looking for..."
+				aria-describedby="basic-addon2">
+		</div>
+	</section>
+	<!-- owl-carousel owl-theme  -->
 
 	<!-- Nguyen's part -->
 	<section class="mecNavTab">
@@ -783,46 +903,7 @@
 		})
 	</script>
 
-	<script src="./js/owl.carousel.min.js"></script>
-	<script>
-		$('.ud-students__course').owlCarousel({
-			loop: true,
-			autoplay: false,
-			nav: true,
-			dots: false,
-			responsive: {
-				0: {
-					items: 1
-				},
-				480: {
-					items: 2
-				},
-				768: {
-					items: 4
-				},
-			}
-		})
-	</script>
-	<script>
-		$('.owl-carousel').owlCarousel({
-			loop: true,
-			autoplay: false,
-			nav: true,
-			dots: false,
-			responsive: {
-				0: {
-					items: 1
-				},
-				480: {
-					items: 2
-				},
-				768: {
-					items: 3
-				},
-			}
-		})
-	</script>
-
+	<script src="./js/index.js"></script>
 </body>
 
 </html>
