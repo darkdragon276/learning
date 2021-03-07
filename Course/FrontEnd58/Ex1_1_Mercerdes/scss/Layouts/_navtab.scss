@@ -1,0 +1,161 @@
+.mecNavTab {
+   i {
+      margin-right: 15px;
+   }
+   background-color: black;
+   &__Tab {
+      border-style: none;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 20px 0px;
+
+      &-Link {
+         @include d-text(13px, 400, #fff, none, none);
+         @include d-button(#fff, none, none, 8px 0px, none);
+         cursor: pointer;
+         //display: inline-block;
+         margin: 0 20px;
+         transition: color 0.25s ease-out;
+      }
+   }
+
+   .nav-link:hover {
+      color: $nguyen-color-blue-0;
+      border: 1px solid #000;
+   }
+
+   .nav-link.active {
+      background-color: inherit;
+      border: 1px solid #000;
+      border-bottom: 1px solid $nguyen-color-blue-0;
+      transition: border-bottom-color 0.25s;
+      color: $nguyen-color-blue-0;
+   }
+
+   .container-fluid {
+      padding: 0px;
+   }
+
+   &__ctnTab {
+      padding: 0px;
+
+      &-g1 {
+         display: grid;
+         grid-template-columns: auto auto auto;
+      }
+
+      a {
+         text-decoration: none;
+         position: relative;
+         border-bottom: 2px solid transparent;
+         border-left: 1px solid transparent;
+         border-right: 1px solid transparent;
+      }
+
+      a:nth-child(9n + 1) {
+         grid-row-start: auto;
+         grid-row-end: span 2;
+         grid-column-start: auto;
+         grid-column-end: span 2;
+      }
+
+      img {
+         display: block;
+         height: 100%;
+         width: 100%;
+         object-fit: cover;
+      }
+
+      h1 {
+         font-family: "Times New Roman", Times, serif;
+         @include d-text(22px, 400, #fff, null, 24px);
+         padding: 13px 31px 13px 31px;
+         margin-bottom: 0px;
+
+         background: rgba(0, 0, 0, 0.35);
+         bottom: 0;
+         left: 0;
+         position: absolute;
+         transition: height 0.5s, background 1.5s;
+         height: 50px;
+         width: 100%;
+      }
+
+      h1:hover {
+         height: 140px;
+         background: rgba(0, 0, 0, 0.75);
+         p {
+            color: white;
+         }
+      }
+
+      p {
+         font-size: 14px;
+         color: transparent;
+         transition: color 0.5s;
+         pointer-events: none;
+      }
+
+      // Reponsive handling
+      @include respond-to("extra-large") {
+         &-g1 {
+            display: grid;
+            grid-template-columns: auto auto;
+         }
+
+         a:nth-child(9n + 1) {
+            grid-row-start: unset;
+            grid-row-end: unset;
+            grid-column-start: unset;
+            grid-column-end: unset;
+         }
+      }
+
+      @include respond-to("medium") {
+         &-g1 {
+            display: grid;
+            grid-template-columns: auto;
+         }
+
+         img {
+            height: auto;
+         }
+
+         h1 {
+            background: none;
+            position: static;
+            margin-bottom: 25px;
+            pointer-events: none;
+         }
+
+         p {
+            display: none;
+         }
+      }
+   }
+
+   &__ctnShowBt {
+      clear: both;
+      display: block;
+      padding-top: 25px !important;
+      text-align: center;
+      width: 100%;
+      button {
+         border: 1px solid #202020;
+         text-decoration: none;
+         border-style: none;
+         background-image: linear-gradient(#303030, #202020);
+         transition: color 0.25s ease-out;
+         color: #999;
+         line-height: 20px;
+         padding: 6px 20px;
+      }
+
+      button:hover {
+         color: white;
+      }
+   }
+
+   &Show {
+      display: none;
+   }
+}
