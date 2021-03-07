@@ -12,6 +12,25 @@
     background-color: #333333;
 
   }
+  .Caption_show {
+    left: 15%;
+    text-align: left;
+    background-color: none;
+    height: 20vw;
+    max-width: 30vw;
+    right: auto;
+    //
+    top: 5%;
+    bottom: auto;
+    padding: 1vw;
+    h3 {
+      font-size: 2vw;
+    }
+    h4{
+      font-size: 1.5vw;
+    }
+  }
+  
   .mec-carousel__slider {
     .mec-carousel__img {
       .mec-item {
@@ -31,21 +50,3 @@
 //   opacity: 0.9;
 // }
 
-.Caption_show {
-  left: 15%;
-  text-align: left;
-  background-color: none;
-  height: 20vw;
-  max-width: 30vw;
-  right: auto;
-  //
-  top: 5%;
-  bottom: auto;
-  padding: 1vw;
-  h3 {
-    font-size: 2vw;
-  }
-  h4{
-    font-size: 1.5vw;
-  }
-}

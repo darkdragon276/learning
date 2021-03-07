@@ -1,3 +1,49 @@
 header {
-    
+    .mec-header {
+        &__container-bg {
+            background-color: #141414;
+            // .row-bg{
+            //     background-color:  #141414;
+            //     color: #141414;
+            // }
+            .row-prop {
+                .nav-link {
+                    color: white;
+                }
+            }
+        }
+
+        // padding-left: 5vw;
+        // padding-right: 5vw;
+        // height: 50vw;
+        img {
+            height: 5vw;
+        }
+        #ul1 {
+            background-color: #141414;
+        }
+    }
 }
+// #navbar {
+//     background-color: #333;
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//     display: block;
+//     transition: top 0.3s;
+//   }
+
+//   #navbar a {
+//     float: left;
+//     display: block;
+//     color: #f2f2f2;
+//     text-align: center;
+//     padding: 15px;
+//     text-decoration: none;
+//     font-size: 17px;
+//   }
+
+//   #navbar a:hover {
+//     background-color: #ddd;
+//     color: black;
+//   }

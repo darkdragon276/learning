@@ -51,3 +51,14 @@ $('.carousel').on('slid.bs.carousel',function(e){
   $(this).find('.Caption_show').slideDown("slow");
   console.log(slideFrom+' => '+slideTo);
 });
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
