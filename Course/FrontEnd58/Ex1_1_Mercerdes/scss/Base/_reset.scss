@@ -7,4 +7,5 @@
 html,body{
     font-family: Arial, Helvetica, sans-serif;
     @include d-text($fs-0, $fw-normal, $color-black-0, $color-white-0, $line-height-0);
+    background-color: $nguyen-color-black-0;
 }
