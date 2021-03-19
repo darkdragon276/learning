@@ -1,0 +1,43 @@
+name: Test deploy react to surge
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./Course/FrontEnd58/Ex12_ReacApp/
+    name: Deploying to surge
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+         
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: |
+            **/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build React App
+        run: npm run build
+        env:
+          CI: false
+
+      - name: Install Surge and run build
+        run: sudo npm install -g surge
+        
+      - name: Deploy to Surge
+        run:  surge ./build ${{secrets.SURGE_DOMAIN}} --token ${{secrets.SURGE_TOKEN}}
