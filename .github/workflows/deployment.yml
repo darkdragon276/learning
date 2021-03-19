@@ -1,11 +1,11 @@
-name: Test deploy react to surge
+name: React Deployment
 on:
   push:
     branches:
-    - main
+    - master
   pull_request:
     branches:
-    - main
+    - master
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -38,6 +38,6 @@ jobs:
 
       - name: Install Surge and run build
         run: sudo npm install -g surge
-        
+
       - name: Deploy to Surge
         run:  surge ./build ${{secrets.SURGE_DOMAIN}} --token ${{secrets.SURGE_TOKEN}}
