@@ -88,7 +88,7 @@ var reloadForm = function (nhanVien) {
 
 var getNhanViens = function () {
     let promise = axios({
-        url: "http://svcy.myclass.vn/api/QuanLyNhanVienApi/LayDanhSachNhanVien",
+        url: "http://192.168.1.106:8080/home",
         method: "GET",
         reponseType: "json",
     }).then(function (result) {
