@@ -14,14 +14,14 @@ export default class Main extends Component {
         return (
             <div>
                 <Header></Header>
-                <Tab></Tab>
+                {/* <Tab></Tab> */}
                 <Carousel></Carousel>
-                <Intro></Intro>
+                {/* <Intro></Intro> */}
                 <Product></Product>
-                <Event></Event>
-                <Product></Product>
-                <Trend></Trend>
-                <Info></Info>
+                {/* <Event></Event> */}
+                {/* <Product></Product> */}
+                {/* <Trend></Trend> */}
+                {/* <Info></Info> */}
                 <Footer></Footer>
             </div>
         )

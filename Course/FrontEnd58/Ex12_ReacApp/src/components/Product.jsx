@@ -1,48 +1,32 @@
 import React, { Component } from 'react'
 
 export default class Product extends Component {
-    // property
-    // background = "";
-    // constructor(background) {
-    //     background = background;
-    // }
-    // method
-    render() {
+
+    renderCard = () => {
         return (
-            <section className="product background1">
-                <h1 className="special">New Products</h1>
-                <div className="product-content">
-                    <div className="product-item">
-                        <img src="./img/p13.jpg" alt />
-                        <p className="product-item-head">My product is the best</p>
-                        <p className="product-item-size">XL/XXL/S</p>
-                        <p className="product-item-price"><span>$100.00</span> $70.00</p>
-                        <button>Add to cart</button>
-                    </div>
-                    <div className="product-item">
-                        <img src="./img/p22.jpg" alt />
-                        <p className="product-item-head">My product is the best</p>
-                        <p className="product-item-size">XL/XXL/S</p>
-                        <p className="product-item-price"><span>$100.00</span> $70.00</p>
-                        <button>Add to cart</button>
-                    </div>
-                    <div className="product-item">
-                        <img src="./img/p9.jpg" alt />
-                        <p className="product-item-head">My product is the best</p>
-                        <p className="product-item-size">XL/XXL/S</p>
-                        <p className="product-item-price"><span>$100.00</span> $70.00</p>
-                        <button>Add to cart</button>
-                    </div>
-                    <div className="product-item">
-                        <img src="./img/p16.jpg" alt />
-                        <p className="product-item-head">My product is the best</p>
-                        <p className="product-item-size">XL/XXL/S</p>
-                        <p className="product-item-price"><span>$100.00</span> $70.00</p>
-                        <button>Add to cart</button>
+            <div className="col-3">
+                <div className="card" style={{ width: '18rem' }}>
+                    <img className="card-img-top" src="https://picsum.photos/200/300" alt="Card image cap" />
+                    <div className="card-body">
+                        <h5 className="card-title">Card title</h5>
+                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" className="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
-            </section>
+            </div>
+        )
+    }
 
+    render() {
+        return (
+            <section className="container my-4">
+                <div className="row">
+                    {this.renderCard()}
+                    {this.renderCard()}
+                    {this.renderCard()}
+                    {this.renderCard()}
+                </div>
+            </section>
         )
     }
 }

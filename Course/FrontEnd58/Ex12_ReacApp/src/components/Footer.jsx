@@ -4,11 +4,8 @@ export default class Footer extends Component {
     render() {
         return (
             <footer>
-                <div className="footer-copy">
-                    <p><span>icon</span>Copyright.NewShop</p>
-                </div>
-                <div className="footer-card">
-                    <img src="./img/card.png" alt />
+                <div className="text-center bg-dark text-light px-5 py-4">
+                    <p>Coppy right @ Your Website 2020</p>
                 </div>
             </footer>
         )

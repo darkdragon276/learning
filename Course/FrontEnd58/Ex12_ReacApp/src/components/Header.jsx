@@ -2,24 +2,29 @@ import React from 'react'
 
 export default function Header() {
     return (
-        <header>
-            <div className="header-left">
-                <p>Help <span><i className="fa fa-mobile" /></span> 01634640124</p>
-            </div>
-            <div className="header-right">
-                <ul>
-                    <li>
-                        <a href="#">Checkout</a>
-                    </li>
-                    <li>
-                        <a href>Login</a>
-                    </li>
-                    <li>
-                        <a href>Account</a>
-                    </li>
-                </ul>
+        <header className="bg-dark">
+            <div className="container">
+                <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+                    <a className="navbar-brand" href="#">Navbar</a>
+                    <button className="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation" />
+                    <div className="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li className="nav-item active">
+                                <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">About</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Service</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </header>
-
     )
 }
