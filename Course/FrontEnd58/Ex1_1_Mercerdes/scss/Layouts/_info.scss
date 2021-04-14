@@ -1,0 +1,163 @@
+.mecInfo {
+   &__Ctn {
+      margin: 0 auto;
+      font-size: $nguyen-font-size-info;
+      background-color: $nguyen-color-black-0;
+      color: $nguyen-color-white-0;
+      width: calc(100% - 60px);
+      padding: 0px;
+      &SpacerL {
+         height: 2.5rem;
+         width: 100%;
+      }
+      &SpacerM {
+         height: 1.5rem;
+         width: 100%;
+      }
+      span {
+         display: inline-block;
+         width: 20px;
+      }
+      p {
+         margin-top: 0;
+         margin-bottom: 1rem;
+      }
+   }
+}
+
+.mecNavInfo {
+   &__Ctn {
+      text-decoration: none;
+      margin: 0 auto;
+      background-color: $nguyen-color-black-0;
+      color: $nguyen-color-white-0;
+      width: calc(100% - 60px);
+      &SpacerL {
+         height: 1.5rem;
+         width: 100%;
+      }
+      &Headline {
+         font-size: 1.85714rem;
+         line-height: 2.28571rem;
+         font-family: $nguyen-font-01;
+      }
+      &List {
+         padding-left: 0px;
+         padding-right: 0px;
+      }
+      ul {
+         list-style-type: none;
+      }
+      hr {
+         border-color: $nguyen-color-gray-1;
+         margin: 30px -1px;
+      }
+      a {
+         color: $nguyen-color-gray-0;
+         transition: color 0.25s ease-out;
+         text-decoration: none;
+      }
+      a:hover {
+         color: $nguyen-color-blue-0;
+      }
+   }
+}
+
+.mecSMedia {
+   &__Ctn {
+      text-decoration: none;
+      margin: 0 auto;
+      color: $nguyen-color-white-0;
+      width: calc(100% - 60px);
+      padding: 0px;
+      &Headline {
+         font-size: 1.85714rem;
+         line-height: 2.28571rem;
+         font-family: $nguyen-font-01;
+      }
+      hr {
+         border-color: $nguyen-color-gray-1;
+         margin: 30px -1px;
+      }
+      &Para {
+         color: $nguyen-color-gray-0;
+         margin-top: 0;
+         margin-bottom: 1rem;
+      }
+      ul {
+         list-style-type: none;
+         display: float;
+      }
+      li {
+         display: block;
+         float: left;
+         font-size: 1.95rem;
+         margin: 10px 16.66667px;
+         width: 45px;
+         text-align: center;    
+      }
+      a {
+         color: $nguyen-color-gray-0;
+         transition: color 0.25s ease-out;
+      }
+      a:hover {
+         color: $nguyen-color-blue-0;
+      }
+   }
+}
+
+.mecBrand {
+   &__Ctn {
+      text-decoration: none;
+      margin: 0 auto;
+      color: $nguyen-color-white-0;
+      width: calc(100% - 60px);
+      padding: 0px;
+      hr {
+         border-color: $nguyen-color-gray-1;
+         margin: 30px -1px;
+      }
+      ul {
+         list-style-type: none;
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 1rem;
+      }
+      li {
+         width: 100%;
+         margin-bottom: 2em;
+         margin-top: 2em;
+         justify-content: center;
+      }
+      img {
+         height: 2em;
+         width: 100%;
+      }
+   }
+}
+
+.mecInWeb {
+   &__Ctn {
+      text-decoration: none;
+      margin: 0 auto;
+      color: $nguyen-color-gray-0;
+      width: calc(100% - 60px);
+      padding: 0px;
+      hr {
+         border-color: $nguyen-color-gray-1;
+         margin: 30px -1px;
+      }
+      a {
+         text-decoration: none;
+         color: $nguyen-color-white-0;
+      }
+      a:hover {
+         color: $nguyen-color-blue-0;
+      }
+   }
+}
+
+.mecSpacerHuge {
+   height: 2.5rem;
+   width: 100%;
+}
