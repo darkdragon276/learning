@@ -1,22 +1,43 @@
 .mec-carousel {
+  // position: relative;
   background-color: #141414;
   padding-left: 5vw;
   padding-right: 5vw;
-  height: 50vw;
+  height: 45vw;
   .input_bar {
-    height: 5vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    height: 4vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
     padding-top: 1vw;
     padding-bottom:1vw;
     background-color: #333333;
+   // color: #333333;
 
   }
+  .Caption_show {
+    left: 15%;
+    text-align: left;
+    background-color: none;
+    height: 20vw;
+    max-width: 30vw;
+    right: auto;
+    //
+    top: 5%;
+    bottom: auto;
+    padding: 1vw;
+    h3 {
+      font-size: 2vw;
+    }
+    h4{
+      font-size: 1.5vw;
+    }
+  }
+  
   .mec-carousel__slider {
     .mec-carousel__img {
       .mec-item {
         img {
-          height: 30vw;
+          height: 37vw;
         }
         button{
           background-color: #333333;
@@ -24,28 +45,5 @@
         }
       }
     }
-  }
-}
-
-// .carousel-item img {
-//   opacity: 0.9;
-// }
-
-.Caption_show {
-  left: 15%;
-  text-align: left;
-  background-color: none;
-  height: 20vw;
-  max-width: 30vw;
-  right: auto;
-  //
-  top: 5%;
-  bottom: auto;
-  padding: 1vw;
-  h3 {
-    font-size: 2vw;
-  }
-  h4{
-    font-size: 1.5vw;
   }
 }

@@ -65,3 +65,26 @@ $('.carousel').on('slid.bs.carousel',function(e){
   $(this).find('.Caption_show').slideDown("slow");
   console.log(slideFrom+' => '+slideTo);
 });
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+// var currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+ 
+//   } else {
+
+//   }
+//   prevScrollpos = currentScrollPos;
+// }
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  console.log(document.body.scrollTop);
+  if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+    document.getElementById("mec-header_navbar").style.top = "-250px";
+  } else {
+
+    document.getElementById("mec-header_navbar").style.top = "0";
+  }
+  prevScrollpos = currentScrollPos;
+}
