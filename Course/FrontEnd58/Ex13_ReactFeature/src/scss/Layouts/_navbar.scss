@@ -1,0 +1,17 @@
+@import './header';
+
+.tab {
+    @extend header;
+    display: flex;
+    h1 {
+        flex: 20%;
+    }
+    &-list {
+        flex:30%;
+        @include listFormat(left, 1rem);
+    }
+    &-cart {
+        flex: 50%;
+        text-align: right;
+    }
+}
